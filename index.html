@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div id="contain" class="container container1">
+      <div class="info">
+        <img
+          data-testid="profilePicture"
+          src="/20231211_165512.png"
+          alt="my img"
+          loading="lazy"
+        />
+        <h1 data-testid="fullName">Zakari Suleiman</h1>
+        <h4 data-testid="jobTitle">Junior Frontend Developer</h4>
+      </div>
+      <!-- BIO -->
+      <p data-testid="shortBio">
+        A passionate software developer and tech enthusiast based in Kaduna,
+        Nigeria. With a background in Electrical and Electronics Engineering, I
+        blend technical expertise with creativity to solve problems and develop
+        impactful projects.
+      </p>
+      <!-- CONTACT -->
+      <div class="contact">
+        <h4 data-testid="currentLocation">
+          <i class="fa-solid fa-location-dot"></i> Nigeria, Kaduna.
+        </h4>
+        <h4 data-testid="emailAddress">
+          <i class="fa-solid fa-envelope"></i
+          ><a href="zaksman2019@gmail.com" class="email" target="_blank">
+            zaksman2019@gmail.com</a
+          >
+        </h4>
+      </div>
+      <!-- SOCIAL -->
+      <div class="socialIcons">
+        <a
+          data-title="X"
+          data-testid="socialLinks"
+          href="https://x.com/Zaks__mann?s=09"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          data-title="github"
+          data-testid="socialLinks"
+          href="https://github.com/Zaksmann"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          data-title="linkedin"
+          data-testid="socialLinks"
+          href="https://www.linkedin.com/in/zakari-suleiman-0747012b9/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <h4 data-testid="currentTimeUTC" id="time">time</h4>
+      </div>
+      <div class="containerCheck">
+        <input title="mode" type="checkbox" name="checkbox" id="checkbox" />
+        <label title="mode" for="checkbox" class="label"></label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/50dd586ce6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

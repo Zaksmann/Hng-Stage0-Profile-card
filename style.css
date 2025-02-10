@@ -1,0 +1,175 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.dark {
+  background-color: #000;
+  /* color: #fff; */
+}
+
+.container {
+  width: 350px;
+  border: 1px groove #5353531f;
+  padding: 20px;
+  margin: 10% auto;
+  border-radius: 10px;
+  text-align: center;
+  transition: box-shadow 1s;
+}
+
+.container1 {
+  background-color: #ffffffee;
+}
+
+.container:hover {
+  box-shadow: inset 1px 5px 8px #000;
+}
+
+.container:active {
+  box-shadow: 1px 5px 8px #000;
+}
+
+img {
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.info h4 {
+  font-size: 15px;
+  color: rgba(95, 95, 243, 0.719);
+}
+
+p {
+  color: #363636c2;
+}
+
+.contact {
+  text-align: left;
+  font-size: 13px;
+}
+
+.contact h4 {
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.5s, transform 0.5s ease;
+}
+
+.contact h4:hover {
+  background-color: #e4e4e4d7;
+  transform: translateX(5px);
+}
+
+.email {
+  text-decoration: none;
+}
+
+.socialIcons a i {
+  padding: 10px;
+  font-size: 20px;
+  color: #000;
+  transition: color 0.5s, transform 0.5s ease;
+}
+
+.socialIcons a i:hover {
+  transform: translateY(-5px);
+  color: rgba(95, 95, 243, 0.719);
+}
+
+.socialIcons a[data-title]:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  /* top: 0; */
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 40px;
+  /* margin-right: 400px; */
+  margin-left: 10px;
+}
+
+/* From Uiverse.io by Yaya12085 */
+
+.containerCheck {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  height: 40px;
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+    inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+    inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+    inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+    inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.label:hover {
+  -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+  transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+}
+
+#checkbox:checked ~ .label:hover {
+  -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+  transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .label::before {
+  left: 70px;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.label::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  background-image: linear-gradient(
+    130deg,
+    #757272 10%,
+    #ffffff 11%,
+    #726f6f 62%
+  );
+  left: 10px;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3),
+    10px 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    width: 80%;
+  }
+}
